@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Wed Designer, Front-end Developer, Freelancer, Detail-oriented, Responsiveness, accessibility">
+
+        <meta property="og:title" content="Essey T. Araya Portfolio">
+        <meta property="og:type" content="Essey T. Araya's officail portfolio." />
+        <meta property="og:image" content="https://essey1.github.io/public/img/meta-profile.jpg">
+        <meta property="og:url" content="https://essey.netlify.app">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <meta property="og:description" content="Hello! My name is Essey Araya. I'm a driven and detail-oriented Front-end Developer with a solid foundation in Data Analytics. I specialize in crafting responsive, accessible and visually appealing websites.">
+        <meta property="og:site_name" content="Essey T. Araya Portfolio">
+        <meta name="twitter:image:alt" content="Essey T. Araya's profile picture">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+        
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" 
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="src/css/style.css">
+
+        <title>Essey T. Araya Portfolio</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="public/img/logo.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#aboutMe" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+                        <li class="nav__item"><a href="#contactMe" class="nav__link">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Hi, I'm Essey Araya
+                </h1>
+                <p class="section__subtitle section__subtitle--intro hidden">I design and build web applications.</p>
+                <div class="section__socials">
+                    <div class="intro__buttons">
+                        <div class="intro__buttons--item hidden">
+                            <a href="#" class="intro__buttons--link cv">
+                                Download CV <i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #c7ece0;"></i>
+                            </a>
+                        </div>
+                        <div class="intro__buttons--item hidden">
+                            <a href="#projects" class="intro__buttons--link">My Projects</a>
+                        </div>
+                        <div class="intro__buttons--item hidden">
+                            <a href="#contactMe" class="intro__buttons--link">Hire Me </a>
+                        </div>
+                    </div>
+                    <ul class="intro__social-list">
+                        <li class="intro__social-list__item hidden">
+                            <a class="intro__social-list__link" href="https://codepen.io/essey1">
+                                <i class="fa-brands fa-codepen"></i>
+                            </a>
+                        </li>
+                        <li class="intro__social-list__item hidden">
+                            <a class="intro__social-list__link" href="https://github.com/essey1">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="intro__social-list__item hidden">
+                            <a class="intro__social-list__link" href="https://www.linkedin.com/in/esseyt/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="my-skills" id="skills">
+                <h2 class="section__title section__title--skills">My Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <h3 class="skill__title">Version Control</h3>
+                        <img class="skill__img--v hidden" src="public/img/git.svg">
+                        <img class="skill__img--v hidden" src="public/img/github.svg">
+                    </div> <!-- / skill -->
+                    <div class="skill">
+                        <h3 class="skill__title">Front-End</h3>
+                        <img class="skill__img--f hidden" src="public/img/html.svg">
+                        <img class="skill__img--f hidden" src="public/img/css.svg">
+                        <img class="skill__img--f hidden" src="public/img/javascript.svg">
+                        <img class="skill__img--f hidden" src="public/img/sass.svg">
+                        <img class="skill__img--f hidden" src="public/img/postcss.svg">
+                        <img class="skill__img--f hidden" src="public/img/bootstrap.svg">
+                    </div> <!-- / skill -->
+                    <!-- <div class="skill">
+                        <h3 class="skill__title">Back-End</h3>
+                        <img class="skill__img--b nodejs hidden" src="public/img/nodejs.svg">
+                    </div> / skill -->
+                    <div class="skill">
+                        <h3 class="skill__title">Data Analysis</h3>
+                        <img class="skill__img--d hidden" src="public/img/python.svg">
+                        <img class="skill__img--d hidden" src="public/img/pandas.svg">
+                        <img class="skill__img--d hidden" src="public/img/numpy.svg">
+                        <img class="skill__img--d matplotlib hidden" src="public/img/matplotlib.svg">
+                    </div> <!-- / skill -->
+                </div> <!-- / skills -->
+            </section>
+
+            <!-- Projects -->
+            <section class="my-projects" id="projects">
+                <h2 class="section__title section__title--projects">My Projects</h2>
+                <div class="projects">
+                    <!-- project 01 -->
+                    <div class="project">
+                        <div class="project__display hidden">
+                            <img src="public/img/biscute.webp" class="project__img">
+                            <p class="project__tools">
+                                Tools: HTML, SCSS, JavaScript, PostCSS
+                            </p>
+                            <p class="project__links">
+                                <a href="https://essey1.github.io/biscute" target="_blank">
+                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                                <a href="https://github.com/essey1/biscute" target="_blank">
+                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project__details hidden">
+                            <h3 class="project__title">Biscuté</h3>
+                            <p class="project__description">
+                                A webiste that I co-built for a cookie company located in Addis Ababa, Ethiopia.<br><br>
+                                My main contributions include:
+                            </p>
+                            <ul class="project__features">
+                                <li>Responsive design with a joyful and delicious feel.</li>
+                                <li>Alternative color theme switcher.</li>
+                                <li>On-scroll animations.</li>
+                                <li>Flip card effect for the product items.</li>
+                                <li>On-hover enlarged product gallery.</li>
+                                <li>About us page.</li>
+                                <li>Submittable contact form, and more.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 02 -->
+                    <div class="project">
+                        <div class="project__display project__display--right hidden">
+                            <img src="public/img/tech-trends.jpg" class="project__img">
+                            <p class="project__tools">
+                                Tools: Python, Pandas, SQL, Numpy, Matpoltlib
+                            </p>
+                            <p class="project__links">
+                                <a href="https://essey1.github.io/tech-trends/Essey_Araya_Presentation.pdf" target="_blank">
+                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                                <a href="https://github.com/essey1/tech-trends" target="_blank">
+                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project__details project__details--left hidden">
+                            <h3 class="project__title">Technology Trends</h3>
+                            <p class="project__description">
+                                As a Data Analyst, I collected data from various sources and identified trends for report on emerging skills.<br><br>
+                                This project includes:
+                            </p>
+                            <ul class="project__features">
+                                <li>Data Collection using API and Web Scraping.</li>
+                                <li>Data Wrangling</li>
+                                <li>Exploratory Analysis</li>
+                                <li>Data Visualization</li>
+                                <li>Dashboards</li>
+                                <li>Presentation</li>
+                            </ul>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 03 -->
+                    <div class="project">
+                        <div class="project__display hidden">
+                            <img src="public/img/movie-posters-vault.jpg" class="project__img">
+                            <p class="project__tools">
+                                Tools: HTML, CSS, React, JSX, OMDb API
+                            </p>
+                            <p class="project__links">
+                                <a href="https://movie-posters-vault.netlify.app" target="_blank">
+                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                                <a href="https://github.com/essey1/movie-posters-vault" target="_blank">
+                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project__details hidden">
+                            <h3 class="project__title">Movie Posters Vault</h3>
+                            <p class="project__description">
+                                A movie posters search engine that allows users to search for and explore movie posters.<br><br>
+                                This project includes:
+                            </p>
+                            <ul class="project__features">
+                                <li>Collection of movies data using the OMDb API.</li>
+                                <li>Search input that maps over the OMDb API and fetches the movie component that matches your search.</li>
+                                <li>JSX component for a movie poster.</li>
+                                <li>Responsive CSS design.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 04 -->
+                    <div class="project">
+                        <div class="project__display project__display--right hidden">
+                            <img src="public/img/tech-trends.jpg" class="project__img">
+                            <p class="project__tools">
+                                Tools: Python, Pandas, SQL, Numpy, Matpoltlib
+                            </p>
+                            <p class="project__links">
+                                <a href="https://essey1.github.io/tech-trends/Essey_Araya_Presentation.pdf" target="_blank">
+                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                                <a href="https://github.com/essey1/tech-trends" target="_blank">
+                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project__details project__details--left hidden">
+                            <h3 class="project__title">Technology Trends</h3>
+                            <p class="project__description">
+                                As a Data Analyst, I collected data from various sources and identified trends for report on emerging skills.<br><br>
+                                This project includes:
+                            </p>
+                            <ul class="project__features">
+                                <li>Data Collection using API and Web Scraping.</li>
+                                <li>Data Wrangling</li>
+                                <li>Exploratory Analysis</li>
+                                <li>Data Visualization</li>
+                                <li>Dashboards</li>
+                                <li>Presentation</li>
+                            </ul>
+                        </div>
+                    </div> <!-- / project -->
+                </div> <!-- / projects -->
+            </section>
+
+            <!-- About me -->
+            <section class="about-me" id="aboutMe">
+                <h2 class="section__title section__title--about">Who I am</h2>
+                <div class="section__subtitle section__subtitle--about">
+                    <span class="typewriter"></span>
+                </div>
+
+                <div class="about-me__body">
+                    <p>
+                        Hello! My name is Essey Tesfamichael Araya. I'm a driven and detail-oriented 
+                        Front-end Developer with a solid foundation in Data Analytics.
+                        I specialize in crafting responsive, accessible and visually appealing websites 
+                        using the latest web technologies.
+                    </p>
+                    <p>
+                        When I'm not coding, I explore latest design strategies and coding techniques. 
+                        By staying updated, I create visually appealing websites with 
+                        seamless functionality that are inclusive and optimized for different 
+                        platforms, delivering exceptional user experiences.
+                    </p>
+                </div>
+
+                <img src="public/img/pic.jpg" class="about-me__img hidden" alt="">
+            </section>
+
+            <!-- My Achievements -->
+            <section class="achievements" id="achievements">
+                <h2 class="section__title section__title--achievements">Certifications</h2>
+
+                <div class="certificates hidden">
+                    <!-- Certificate item 01-->
+                    <div class="certificate__item certificate__item--1">
+                        <img src="public/img/da.jpg" alt="" class="certificate__img certificate__img--1">
+                    </div>
+
+                    <!-- Certificate item 02-->
+                    <div class="certificate__item certificate__item--2">
+                        <img src="public/img/wd4e.jpg" alt="" class="certificate__img certificate__img--2">
+                    </div>
+
+                    <!-- Certificate item 03-->
+                    <div class="certificate__item certificate__item--3">
+                        <img src="public/img/it.jpg" alt="" class="certificate__img certificate__img--3">
+                    </div>
+
+                    <!-- Certificate item 04-->
+                    <div class="certificate__item certificate__item--4">
+                        <img src="public/img/git.jpg" alt="" class="certificate__img certificate__img--4">
+                    </div>
+
+                    <!-- Certificate item 05-->
+                    <div class="certificate__item certificate__item--5">
+                        <img src="public/img/hcj.jpg" alt="" class="certificate__img certificate__img--5">
+                    </div>
+
+                    <!-- Certificate item 06-->
+                    <div class="certificate__item certificate__item--6">
+                        <img src="public/img/ml.jpg" alt="" class="certificate__img certificate__img--6">
+                    </div>        
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <section class="footer__container" id="contactMe">
+                <h2 class="section__title section__title--contact">Contact me</h2>
+                <div class="contact-container">
+                    <div class="footer__contact-info hidden">
+                        <h3 class="contact-info__name"><strong>Full Name</strong> <br> Essey Tesfamichael Araya</h3>
+                        <h3 class="contact-info__email"><strong>Email</strong> <br><a class="footer__email" href="mailto:esseyt3@gmail.com">esseyt3@gmail.com</a></h3>
+                    
+                        <ul class="footer__social-list">
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="https://codepen.io/essey1">
+                                    <i class="fa-brands fa-codepen"></i>
+                                </a>    
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="https://github.com/essey1">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="https://www.linkedin.com/in/esseyt/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form action="https://formspree.io/f/mzblpkly" method="POST" class="footer__contact--form hidden" id="contactForm" autocomplete="off" netlify>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" required/>
+                            <label for="">Full Name</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input"/>
+                            <label for="">Phone <span>&#40Optional&#41</span></label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" required/>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="subject" class="input" required/>
+                            <label for="">Subject</label>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" required></textarea>
+                            <label for="">Message</label>
+                        </div>
+                        <button type="submit" value="send" class="contact-btn">
+                            Send Message<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <p class="footer__copyright">© 2023 Essey Tesfamichael Araya</p>
+        </footer>
+        
+        <script src="src/js/script.js"></script>
+
+    </body>
+</html>
