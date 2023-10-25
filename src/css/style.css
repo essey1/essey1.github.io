@@ -1040,16 +1040,16 @@ header {
     margin-left: .75em;
 }
 
+.footer__social-list__item:hover {
+    opacity: .6;
+}
+
+.footer__social-list__item:active {
+    opacity: .8;
+}
+
 .footer__social-list__link {
     color: var(--clr-accent);
-}
-
-.footer__social-list__link:hover {
-    opacity: .5;
-}
-
-.footer__social-list__link:active {
-    opacity: .75;
 }
 
 .footer__contact--form {
