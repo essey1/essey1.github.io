@@ -575,6 +575,10 @@ header {
     margin: 0 .25em;
 }
 
+.skill__img--v {
+    min-width: 60px;
+}
+
 .nodejs {
     max-width: 85px;
 }
