@@ -576,7 +576,11 @@ header {
 }
 
 .skill__img--v {
-    min-width: 60px;
+    min-width: 50px;
+}
+
+.instron{
+    min-width: 80px;
 }
 
 .nodejs {
