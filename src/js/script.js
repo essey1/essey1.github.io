@@ -86,13 +86,13 @@ const text = document.querySelector(".typewriter");
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "Designer";
+    text.textContent = "Hands-on";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Future Engineer";
+    text.textContent = "Fast Learner";
   }, 3000);
   setTimeout(() => {
-    text.textContent = "Researcher";
+    text.textContent = "Detail Oriented";
   }, 6000);
 }
 
