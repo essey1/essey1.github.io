@@ -329,12 +329,9 @@
                 <h2 class="section__title section__title--projects">Software Engineering Projects</h2>
                 <div class="projects">
 
-                    
-                    
-
                     <!-- project 01 -->
                     <div class="project">
-                        <div class="project__display project__display hidden">
+                        <div class="project__display hidden">
                             <img src="public/img/biscute.webp" class="project__img">
                             <p class="project__tools">
                                 Tools: HTML, SCSS, JavaScript, PostCSS
@@ -348,7 +345,7 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="project__details project__details hidden">
+                        <div class="project__details hidden">
                             <h3 class="project__title">Biscuté</h3>
                             <p class="project__description">
                                 A webiste that I co-built for a cookie company located in Addis Ababa, Ethiopia.<br><br>
@@ -366,9 +363,36 @@
                         </div>
                     </div> <!-- / project -->
 
-                    <!-- project 03 -->
+                    <!-- project 02 -->
                     <div class="project">
                         <div class="project__display project__display--right hidden">
+                            <img src="public/img/height_velocity_plot.png" class="project__img">
+                            <p class="project__tools">
+                                Tools: C++, Python, GitHub Actions (CI/CD), Pandas, Matplotlib
+                            </p>
+                            <p class="project__links">
+                                <a href="https://github.com/essey1/drone-vertical-dynamics-simulation" target="_blank">
+                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project__details project__details--left hidden">
+                            <h3 class="project__title">Drone Vertical Dynamics Simulation</h3>
+                            <p class="project__description">
+                                Developed a physics-based simulation to model and validate the vertical flight dynamics of a drone.
+                                <br><br>
+                                Implemented a C++ simulation using Runge–Kutta integration to model motion under thrust, gravity, and drag. Defined simulation API through Drone.h, Integrator.h, and a shared State data structure.
+                                <br><br>
+                                Designed an automated CI/CD pipeline that builds and runs the simulation, verifies numerical results against analytical expectations, generates flight plots, and deploys validated results via GitHub Pages.
+                                <br><br>
+                                The framework is structured for future expansion to 2D and 3D dynamics, and real drone characteristics.
+                            </p>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 03 -->
+                    <div class="project">
+                        <div class="project__display hidden">
                             <img src="public/img/tech-trends.jpg" class="project__img">
                             <p class="project__tools">
                                 Tools: Python, Pandas, SQL, Numpy, Matpoltlib
@@ -382,7 +406,7 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="project__details project__details--left hidden">
+                        <div class="project__details hidden">
                             <h3 class="project__title">Technology Trends</h3>
                             <p class="project__description">
                                 As a Data Analyst, I collected data from various sources and identified trends for report on emerging skills.<br><br>
@@ -401,7 +425,7 @@
 
                     <!-- project 02 -->
                     <div class="project">
-                        <div class="project__display hidden">
+                        <div class="project__display project__display--right hidden">
                             <img src="public/img/movie-posters-vault.jpg" class="project__img">
                             <p class="project__tools">
                                 Tools: HTML, CSS, React, JSX, OMDb API
@@ -415,7 +439,7 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="project__details hidden">
+                        <div class="project__details project__details--left hidden">
                             <h3 class="project__title">Movie Posters Vault</h3>
                             <p class="project__description">
                                 A movie posters search engine that allows users to search for and explore movie posters.<br><br>
