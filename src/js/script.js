@@ -65,7 +65,7 @@ formToReset.addEventListener('submit', (e) => {
 // On scroll animations
 document.addEventListener("DOMContentLoaded", () => {
   const options = {
-    threshold: 0.2,
+    threshold: 0.05,
   }
 
   const observer = new IntersectionObserver((entries) => {
@@ -80,6 +80,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
 })
+
+// Project card tap-to-expand (touch devices)
+const projectItems = document.querySelectorAll(".project__item");
+
+projectItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (item.classList.contains("expanded")) {
+      item.classList.remove("expanded");
+    } else {
+      projectItems.forEach((other) => other.classList.remove("expanded"));
+      item.classList.add("expanded");
+    }
+  });
+});
 
 // About me typewriter
 const text = document.querySelector(".typewriter");

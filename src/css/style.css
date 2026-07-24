@@ -671,23 +671,32 @@ header {
 .skill__img--v,
 .skill__img--b,
 .skill__img--d {
-    max-width: 46px;
+    max-width: 43px;
     margin: 0 .25em;
 }
 
-.skill__img--v {
-    min-width: 50px;
+.skill__img--v,
+.scikit {
+    min-width: 60px;
+}
+
+.scikit {
+    min-width: 70px;
 }
 
 .instron{
     min-width: 80px;
 }
 
-.nodejs {
-    max-width: 85px;
+.scipy {
+    max-width: 90px;
 }
 
-.matplotlib {
+.pytorch {
+    max-width: 100px;
+}
+
+.matplotlib{
     max-width: 120px;
 }
 
@@ -742,24 +751,108 @@ header {
     opacity: 0.5;
 }
 
-.project {
-    max-width: 500px;
-    margin: 0 auto 5em;
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.project__img{
-    margin-top: 2em;
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-    box-shadow: var(--bs);
-    border-radius: .25em;
+@media (min-width: 700px) {
+    .projects {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+        max-width: 1100px;
+    }
 }
 
-.project__img:hover,
-.project__items:focus .project__img {
-    transform: scale(1.025, 1.025);
-    opacity: .9;
+.project__item { position: relative; aspect-ratio: 4 / 3; }
+.project__card {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;
+    background-color: var(--clr-accent); border-radius: .25em; box-shadow: var(--bs);
+    transition: width 750ms cubic-bezier(.5, 0, .5, 1), height 750ms cubic-bezier(.5, 0, .5, 1), top 750ms cubic-bezier(.5, 0, .5, 1), left 750ms cubic-bezier(.5, 0, .5, 1);
+}
+.project__img {
+    position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover;
+    transition: width 500ms cubic-bezier(.5, 0, .5, 1), left 500ms cubic-bezier(.5, 0, .5, 1);
+}
+.project__face {
+    position: absolute; inset: auto 0 0 0; z-index: 2; padding: .75em 1em;
+    background: linear-gradient(to top, rgba(0, 0, 0, .94), rgba(0, 0, 0, .65) 65%, rgba(0, 0, 0, 0)); text-align: start;
+    transition: width 500ms cubic-bezier(.5, 0, .5, 1), left 500ms cubic-bezier(.5, 0, .5, 1);
+}
+.project__face .project__title { margin-top: 0; margin-bottom: .25em; color: var(--clr-white); text-shadow: 0 2px 5px rgba(0, 0, 0, 1); }
+.project__details {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 1em; overflow-y: auto;
+    background-color: var(--clr-dark-accent); text-align: start; opacity: 0; visibility: hidden;
+    transition: left 500ms cubic-bezier(.5, 0, .5, 1), width 500ms cubic-bezier(.5, 0, .5, 1), opacity 500ms linear, visibility 0s linear 500ms;
+}
+.project__item:hover .project__details, .project__item.expanded .project__details {
+    opacity: 1; visibility: visible;
+    transition: left 500ms cubic-bezier(.5, 0, .5, 1), width 500ms cubic-bezier(.5, 0, .5, 1), opacity 500ms linear 250ms, visibility 0s linear;
+}
+
+@media (min-width: 700px) {
+    .project__item:hover, .project__item.expanded { z-index: 10; }
+    .project__item:hover .project__card, .project__item.expanded .project__card {
+        z-index: 1; width: calc(200% + 1em); height: min(calc(200% + 1em), 85vh);
+    }
+    .project__item:hover .project__img, .project__item.expanded .project__img,
+    .project__item:hover .project__face, .project__item.expanded .project__face { width: 50%; }
+    .project__item:hover .project__details, .project__item.expanded .project__details { left: 50%; width: 50%; }
+    .project__item--1:hover .project__card, .project__item--1.expanded .project__card,
+    .project__item--3:hover .project__card, .project__item--3.expanded .project__card,
+    .project__item--5:hover .project__card, .project__item--5.expanded .project__card,
+    .project__item--7:hover .project__card, .project__item--7.expanded .project__card,
+    .project__item--9:hover .project__card, .project__item--9.expanded .project__card { left: calc(-100% - 1em); }
+    /* Anchor the final grid row at its bottom edge and expand upward. */
+    .project__item:nth-last-child(-n + 2):hover .project__card,
+    .project__item:nth-last-child(-n + 2).expanded .project__card {
+        top: calc(100% - min(calc(200% + 1em), 85vh));
+    }
+    .project__item--2:hover .project__img, .project__item--2.expanded .project__img,
+    .project__item--4:hover .project__img, .project__item--4.expanded .project__img,
+    .project__item--6:hover .project__img, .project__item--6.expanded .project__img,
+    .project__item--8:hover .project__img, .project__item--8.expanded .project__img,
+    .project__item--2:hover .project__face, .project__item--2.expanded .project__face,
+    .project__item--4:hover .project__face, .project__item--4.expanded .project__face,
+    .project__item--6:hover .project__face, .project__item--6.expanded .project__face,
+    .project__item--8:hover .project__face, .project__item--8.expanded .project__face { left: 50%; }
+    .project__item--2:hover .project__details, .project__item--2.expanded .project__details,
+    .project__item--4:hover .project__details, .project__item--4.expanded .project__details,
+    .project__item--6:hover .project__details, .project__item--6.expanded .project__details,
+    .project__item--8:hover .project__details, .project__item--8.expanded .project__details { left: 0; }
+}
+@media (max-width: 699px) {
+    /* Single column: revert to the original simple stacked card --
+       image, then title and links, then description, all visible, no expand */
+    .project__item {
+        aspect-ratio: auto;
+    }
+    .project__card {
+        position: static;
+        overflow: visible;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        transition: none;
+    }
+    .project__img {
+        position: static;
+        height: auto;
+    }
+    .project__face,
+    .project__details {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        padding: .75em 1em;
+    }
+    .project__face .project__title {
+        color: var(--clr-light-grey);
+    }
 }
 
 .project__tools {
@@ -807,46 +900,6 @@ header {
 
 .project__features {
     text-align: start;
-}
-
-@media (min-width: 750px) {
-    .project {
-        display: flex;
-        max-width: 1000px;
-    }
-
-    .project:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
-    .project__img {
-        min-width: 280px;
-        max-width: 330px;
-    }
-
-    .project__title {
-        margin-top: 1.25em;
-    }
-
-    .project__details {
-        margin-left: 2em;
-    }
-
-    .project__details--left {
-        margin: 0 2em 0 0;
-    }
-}
-
-@media (min-width: 850px) {
-    .project__img {
-        min-width: 390px;
-    }
-}
-
-@media (min-width: 990px) {
-    .project__img {
-        min-width: 460px;
-    }
 }
 
 /* About me */
@@ -1283,9 +1336,28 @@ textarea.input {
     transform: translateX(25%);
 }
 
+/* Desktop project cards enter from their opposite horizontal offset. */
+@media (min-width: 700px) {
+    .project__item--1.hidden,
+    .project__item--3.hidden,
+    .project__item--5.hidden,
+    .project__item--7.hidden,
+    .project__item--9.hidden {
+        transform: translateX(25%);
+    }
+
+    .project__item--2.hidden,
+    .project__item--4.hidden,
+    .project__item--6.hidden,
+    .project__item--8.hidden {
+        transform: translateX(-25%);
+    }
+}
+
 .about-me__img.hidden,
 .intro__img.hidden,
-.certificates.hidden {
+.certificates.hidden,
+.projects.hidden {
     opacity: 0;
     filter: blur(2px);
     transform: translateX(0);
@@ -1323,6 +1395,8 @@ textarea.input {
 .about-me__img.show,
 .intro__img.show,
 .certificates.show,
+.projects.show,
+.project__item.show,
 .footer__contact--form.show,
 .show {
     opacity: 1;
@@ -1450,13 +1524,17 @@ textarea.input {
     .skill:nth-child(2).hidden,
     .project__details.hidden,
     .project__display--right.hidden,
+    .project__item--3.hidden,
+    .project__item--6.hidden,
+    .project__item--9.hidden,
     .footer__contact--form.hidden {
         transform: translateX(0);
     }
 
     .about-me__img.hidden,
     .intro__img.hidden,
-    .certificates.hidden {
+    .certificates.hidden,
+.projects.hidden {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);

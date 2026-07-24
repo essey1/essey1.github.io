@@ -113,6 +113,17 @@
                 <h2 class="section__title section__title--skills">My Skills</h2>
                 <div class="skills">
                     <div class="skill">
+                        <h3 class="skill__title">Machine Learning</h3>
+                        <img class="skill__img--d hidden" src="public/img/python.svg">
+                        <img class="skill__img--d hidden pytorch" src="public/img/pytorch.svg">
+                        <img class="skill__img--d hidden pytorch" src="public/img/gpytorch.png">
+                        <img class="skill__img--d hidden scikit" src="public/img/scikit-learn.svg">
+                        <img class="skill__img--d hidden" src="public/img/pandas.svg">
+                        <img class="skill__img--d hidden" src="public/img/numpy.svg">
+                        <img class="skill__img--d hidden scipy" src="public/img/scipy.png">
+                        <img class="skill__img--d matplotlib hidden" src="public/img/matplotlib.svg">
+                    </div> <!-- / skill -->
+                    <div class="skill">
                         <h3 class="skill__title">Engineering Design</h3>
                         <img class="skill__img--v hidden" src="public/img/inventor.svg">
                         <img class="skill__img--v hidden" src="public/img/bambu-lab.svg">
@@ -121,340 +132,416 @@
                         <img class="skill__img--v instron hidden" src="public/img/instron.svg">
                     </div> <!-- / skill -->
                     <div class="skill">
-                        <h3 class="skill__title">Web Dev</h3>
+                        <h3 class="skill__title">Front-End</h3>
                         <img class="skill__img--f hidden" src="public/img/html.svg">
                         <img class="skill__img--f hidden" src="public/img/css.svg">
                         <img class="skill__img--f hidden" src="public/img/javascript.svg">
+                        <img class="skill__img--f hidden" src="public/img/ts.svg">
+                        <img class="skill__img--f hidden" src="public/img/react.svg">
+                        <img class="skill__img--f hidden" src="public/img/nextjs.svg">
                         <img class="skill__img--f hidden" src="public/img/sass.svg">
                         <img class="skill__img--f hidden" src="public/img/postcss.svg">
                         <img class="skill__img--f hidden" src="public/img/bootstrap.svg">
                         <img class="skill__img--f hidden" src="public/img/git.svg">
                         <img class="skill__img--f hidden" src="public/img/github.svg">
                     </div> <!-- / skill -->
+                    <div class="skill">
+                        <h3 class="skill__title">Back-End & Systems</h3>
+                        <img class="skill__img--b hidden" src="public/img/cpp.svg">
+                        <img class="skill__img--b hidden" src="public/img/fastapi.svg">
+                        <img class="skill__img--b hidden" src="public/img/postgresql.svg">
+                        <img class="skill__img--b hidden" src="public/img/docker.svg">
+                        <img class="skill__img--b hidden" src="public/img/linux.svg">
+                        <img class="skill__img--b hidden" src="public/img/githubactions.svg">
+                        <img class="skill__img--b hidden" src="public/img/vercel.svg">
+                    </div> <!-- / skill -->
                     <!-- <div class="skill">
                         <h3 class="skill__title">Back-End</h3>
                         <img class="skill__img--b nodejs hidden" src="public/img/nodejs.svg">
                     </div> / skill -->
-                    <div class="skill">
-                        <h3 class="skill__title">Data Analysis</h3>
-                        <img class="skill__img--d hidden" src="public/img/python.svg">
-                        <img class="skill__img--d hidden" src="public/img/pandas.svg">
-                        <img class="skill__img--d hidden" src="public/img/numpy.svg">
-                        <img class="skill__img--d matplotlib hidden" src="public/img/matplotlib.svg">
-                    </div> <!-- / skill -->
+                    
                 </div> <!-- / skills -->
             </section>
 
             <!-- Projects -->
             <section class="my-projects" id="projects">
-                <h2 class="section__title section__title--projects">Mechanical Engineering Projects</h2>
-                <div class="projects">
+                <h2 class="section__title section__title--projects">My Projects</h2>
+                <div class="projects hidden">
 
-                    
-
-                    <!-- project -04 -->
-                    <div class="project">
-                        <div class="project__display hidden">
-                            <img src="public/img/chassis.webp" class="project__img">
-                            <p class="project__tools">
-                                Tools: Autodesk Inventor, Altair Inspire FEA
-                            </p>
-                            <p class="project__links">
-                                <a href="https://essey1.github.io/chassis/Vehicle-Impact-Analysis.pdf" target="_blank">
-                                    Report<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <!-- <a href="https://github.com/essey1/biscute" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a> -->
-                            </p>
-                        </div>
-                        <div class="project__details hidden">
-                            <h3 class="project__title">Chassis Design</h3>
-                            <p class="project__description">
-                                During the Fall 2025 semester, I led a team of 3 in redesigning a solar car chassis to reduce weight, and improve factor of safety and manufacturability.
-                                <br><br>
-                                I evaluated 18 load cases using FEA to identify safe material removal, then refined the geometry by communicating with the manufacturing team to ensure reliable manufacturing.
-                                <br><br>
-                                The final design achieved a 32% reduction in mass while fulfilling all safety requirements and improving manufacturability.
-                            </p>
-
-                            <!-- <ul class="project__features">
-                                <li>FEA Simulations under 18 load cases</li>
-                                <li>Creative design solutions to reduce weight</li>
-                                <li>Design for Manufacturing (DFM) considerations</li>
-                            </ul> -->
+                    <!-- project 1 -->
+                    <div class="project__item project__item--8 hidden">
+                        <div class="project__card">
+                            <img src="public/img/gp-phs.png" alt="" class="project__img project__img--8">
+                            <div class="project__face">
+                                <h3 class="project__title">Gaussian Process for Port-Hamiltonian Systems</h3>
+                                <p class="project__links">
+                                    <a href="https://gp-phs.netlify.app/gp_phs" target="_blank">
+                                        Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                    <a href="https://github.com/essey1/neuromancer" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Python, PyTorch, GPyTorch, SciPy
+                                </p>
+                                <p class="project__description">
+                                    A Bayesian physics-informed ML toolbox for learning Port-Hamiltonian systems with uncertainty quantification, integrated into NeuroMANCER, PNNL's open-source scientific machine learning library.<br><br>
+                                    This project includes:
+                                </p>
+                                <ul class="project__features">
+                                    <li>Gaussian Process kernel and mean function design for PHS structure</li>
+                                    <li>Uncertainty-quantified parameter recovery across multiple physical systems</li>
+                                    <li>Validation notebooks: inverted pendulum, DC motor, N-mass chain, driven Duffing oscillator</li>
+                                    <li>250+ unit tests, Sphinx/RST documentation pipeline</li>
+                                    <li>Paper submission (IFAC format)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div> <!-- / project -->
 
-                     <!-- project -03 -->
-                    <div class="project">
-                        <div class="project__display project__display--right hidden">
-                            <img src="public/img/composite.webp" class="project__img">
-                            <p class="project__tools">
-                                Tools: Composite Materials, Mold Making, Universal Testing Machine, Excel, ANSYS ACP & FEA, 3D Printing, Stress-Strain Curves
-                            </p>
-                            <p class="project__links">
-                                <a href="https://essey1.github.io/composite-research/composite-research-report.pdf" target="_blank">
-                                    Report<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <!-- <a href="https://github.com/essey1/biscute" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a> -->
-                            </p>
-                        </div>
-                        <div class="project__details project__details--left hidden">
-                            <h3 class="project__title">Composite Materials: Building an Aeroshell and a Battery Box</h3>
-                            <p class="project__description">
-                                This project was completed during my summer 2025 internship at Berea College as part of the Solar Car team. I took ownership of designing and building a composite battery box and developed a scalable manufacturing approach for the solar car aeroshell.
-                                <br><br>
-                                I conducted coupon tests to evaluate strength to weight ratios of different composite layups and assess manufacturing quality, designed and fabricated female molds using 3D printed plugs. Design decisions balanced strength, weight, and manufacturability.
-                                <br><br>
-                                I achieved a lightweight composite battery box at 50% of the estimated budget and produced small scale aeroshell canopy.
-                            </p>
-                            <!-- <ul class="project__features">
-                                <li>Conducting coupon tests on various composite layups using a Universal Testing Machine (UTM)</li>
-                                <li>Fabricating Female Mold using by 3D Printing the plug</li>
-                                <li>Creating Small Scale Canopy of Solar Car using Scalable Manufacturing Methods</li>
-                                <li>Designing and implementing box joints to securely join box panels</li>
-                                <li>Simulating composite layups in ANSYS ACP and validating designs through ANSYS FEA</li>
-                            </ul> -->
-
-                        </div>
-                    </div> <!-- / project -->
-                    
-
-                    <!-- project -02 -->
-                    <div class="project">
-                        <div class="project__display hidden">
-                            <img src="public/img/electromyography.webp" class="project__img">
-                            <p class="project__tools">
-                                Tools: OpAmps(LF353), Oscilloscope, Amplifier Circuit
-                            </p>
-                            <p class="project__links">
-                                <a href="https://essey1.github.io/electromyography/Electromyography.pdf" target="_blank">
-                                    Report<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <!-- <a href="https://github.com/essey1/biscute" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a> -->
-                            </p>
-                        </div>
-                        <div class="project__details hidden">
-                            <h3 class="project__title">Electromyography: Building an Amplifier Circuit</h3>
-                            <p class="project__description">
-                                An electronics project focused on measuring surface electromyography signals generated by muscle activity.
-                                <br><br>
-                                Utilized LF353 op amps to achieve sufficient gain while keeping noise low. I tested the circuit under different loading conditions to ensure the signal was stable and usable for analysis.
-                                <br><br>
-                                I chose electromyography for this lab project because of its impactful applications in prosthetics, medical diagnostics, and sport science.
-                            </p>
-                            <!-- <ul class="project__features">
-                                <li>Multistate Amplifier Circuit</li>
-                                <li>Signal Conditioning</li>
-                                <li>Testing and Validation of Amplification</li>
-                                <li>Experimentation using different weights</li>
-                            </ul> -->
+                     <!-- project 2 -->
+                    <div class="project__item project__item--1 hidden">
+                        <div class="project__card">
+                            <img src="public/img/lumen.png" alt="" class="project__img project__img--1">
+                            <div class="project__face">
+                                <h3 class="project__title">Lumen</h3>
+                                <p class="project__links">
+                                    <a href="https://v0-lumen-berea.vercel.app/" target="_blank">
+                                        Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                    <a href="https://github.com/essey1/lumen-bp" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Next.js 16, TypeScript, Python, PostgreSQL, Vercel AI SDK
+                                </p>
+                                <p class="project__description">
+                                    As Team Lead, I helped build Lumen, a tool for generating personalized degree plans for Berea College students.
+                                    <br><br>
+                                    My contributions include:
+                                </p>
+                                <ul class="project__features">
+                                    <li>A greedy prerequisite-graph solver in TypeScript that generated 4-year degree plans</li>
+                                    <li>A course-ranking pipeline that generated 3 personalized degree pathways per student from career goals</li>
+                                </ul>
+                            </div>
                         </div>
                     </div> <!-- / project -->
 
-                     <!-- project -01 -->
-                    <div class="project">
-                        <div class="project__display project__display--right hidden">
-                            <img src="public/img/thumbnail.webp" class="project__img">
-                            <p class="project__tools">
-                                Tools: PASCO Capstone, 3D Printing, Trigonometry, Mechanics
-                            </p>
-                            <p class="project__links">
-                                <a href="https://www.youtube.com/watch?v=VU-s-KPoEwA" target="_blank">
-                                    Video<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <!-- <a href="https://github.com/essey1/biscute" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a> -->
-                            </p>
-                        </div>
-                        <div class="project__details project__details--left hidden">
-                            <h3 class="project__title">Rolling Uphill? The Double Cone Illusion</h3>
-                            <p class="project__description">
-                                A video showcasing why a double cone appears to roll uphill. I show how the center 
-                                of mass actually moves downward visually and mathematically, revealing the geometry behind the 
-                                classic “uphill cone” paradox.
-                                <br><br>
-                                This Project includes:
-
-                            </p>
-                            <ul class="project__features">
-                                <li>Video Motion Analysis using PASCO Capstone</li>
-                                <li>Mathematical proof of the change in position of the center of mass with respect to time</li>
-                                <li>Lagrangian of the System</li>
-                            </ul>
-                        </div>
-                    </div> <!-- / project -->
-                    
-                    <!-- project 00 -->
-                    <div class="project">
-                        <div class="project__display hidden">
-                            <img src="public/img/jack-stand.webp" class="project__img">
-                            <p class="project__tools">
-                                Tools: Autodesk Inventor, Bambu Labs
-                            </p>
-                            <p class="project__links">
-                                <a href="https://etad-130.my.canva.site/essey-presentation" target="_blank">
-                                    Presentation<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <!-- <a href="https://github.com/essey1/biscute" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a> -->
-                            </p>
-                        </div>
-                        <div class="project__details hidden">
-                            <h3 class="project__title">Jack Stand</h3>
-                            <p class="project__description">
-                                Designed, prototyped and 3D-printed a jack stand for my final design and documentation project.<br><br>
-                                This Project includes:
-                            </p>
-                            <ul class="project__features">
-                                <li>Advanced CAD and 3D printing features</li>
-                                <li>Dimension comparisons between design and printed part</li>
-                                <li>Detachable handle system for convenient part replacement</li>
-                                <li>Cost and waste analysis</li>
-                            </ul>
-                        </div>
-                    </div> <!-- / project -->
-                    
-                </div> <!-- / projects -->
-
-
-            <!-- Projects -->
-                <h2 class="section__title section__title--projects">Software Engineering Projects</h2>
-                <div class="projects">
-
-                    <!-- project 01 -->
-                    <div class="project">
-                        <div class="project__display hidden">
-                            <img src="public/img/biscute.webp" class="project__img">
-                            <p class="project__tools">
-                                Tools: HTML, SCSS, JavaScript, PostCSS
-                            </p>
-                            <p class="project__links">
-                                <a href="https://essey1.github.io/biscute" target="_blank">
-                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <a href="https://github.com/essey1/biscute" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="project__details hidden">
-                            <h3 class="project__title">Biscuté</h3>
-                            <p class="project__description">
-                                A webiste that I co-built for a cookie company located in Addis Ababa, Ethiopia.<br><br>
-                                My main contributions include:
-                            </p>
-                            <ul class="project__features">
-                                <li>Responsive design with a joyful and delicious feel.</li>
-                                <li>Alternative color theme switcher.</li>
-                                <li>On-scroll animations.</li>
-                                <li>Flip card effect for the product items.</li>
-                                <li>On-hover enlarged product gallery.</li>
-                                <li>About us page.</li>
-                                <li>Submittable contact form, and more.</li>
-                            </ul>
+                    <!-- project 3 -->
+                    <div class="project__item project__item--8 hidden">
+                        <div class="project__card">
+                            <img src="public/img/safesource.png" alt="" class="project__img project__img--8">
+                            <div class="project__face">
+                                <h3 class="project__title">SafeSource</h3>
+                                <p class="project__links">
+                                    <a href="https://biobound-frontend.vercel.app/" target="_blank">
+                                        Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                    <a href="https://devpost.com/software/safesource" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Python, FastAPI, Gemini Vision API, Pydantic v2, Next.js 15
+                                </p>
+                                <p class="project__description">
+                                    Built during a hackathon, SafeSource is an AI platform that quantifies PFAS exposure risk using EPA water datasets.<br><br>
+                                    This project includes:
+                                </p>
+                                <ul class="project__features">
+                                    <li>A Python/FastAPI platform built in 24 hours to quantify PFAS exposure risk</li>
+                                    <li>A Risk Exposure Index using geospatial, behavioral, and retail inputs to compute exposure scores</li>
+                                    <li>A pipeline using Google Gemini Vision + Pydantic to estimate PFAS levels from grocery receipt images</li>
+                                </ul>
+                            </div>
                         </div>
                     </div> <!-- / project -->
 
-                    <!-- project 02 -->
-                    <div class="project">
-                        <div class="project__display project__display--right hidden">
-                            <img src="public/img/height_velocity_plot.png" class="project__img">
-                            <p class="project__tools">
-                                Tools: C++, Python, GitHub Actions (CI/CD), Pandas, Matplotlib
-                            </p>
-                            <p class="project__links">
-                                <a href="https://github.com/essey1/drone-vertical-dynamics-simulation" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="project__details project__details--left hidden">
-                            <h3 class="project__title">Drone Vertical Dynamics Simulation</h3>
-                            <p class="project__description">
-                                Developed a physics-based simulation to model and validate the vertical flight dynamics of a drone.
-                                <br><br>
-                                Implemented a C++ simulation using Runge–Kutta integration to model motion under thrust, gravity, and drag. Defined simulation API through Drone.h, Integrator.h, and a shared State data structure.
-                                <br><br>
-                                Designed an automated CI/CD pipeline that builds and runs the simulation, verifies numerical results against analytical expectations, generates flight plots, and deploys validated results via GitHub Pages.
-                                <br><br>
-                                The framework is structured for future expansion to 2D and 3D dynamics, and GUI.
-                            </p>
-                        </div>
-                    </div> <!-- / project -->
-
-                    <!-- project 03 -->
-                    <div class="project">
-                        <div class="project__display hidden">
-                            <img src="public/img/tech-trends.jpg" class="project__img">
-                            <p class="project__tools">
-                                Tools: Python, Pandas, SQL, Numpy, Matpoltlib
-                            </p>
-                            <p class="project__links">
-                                <a href="https://essey1.github.io/tech-trends/Essey_Araya_Presentation.pdf" target="_blank">
-                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <a href="https://github.com/essey1/tech-trends" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="project__details hidden">
-                            <h3 class="project__title">Technology Trends</h3>
-                            <p class="project__description">
-                                As a Data Analyst, I collected data from various sources and identified trends for report on emerging skills.<br><br>
-                                This project includes:
-                            </p>
-                            <ul class="project__features">
-                                <li>Data Collection using API and Web Scraping.</li>
-                                <li>Data Wrangling</li>
-                                <li>Exploratory Analysis</li>
-                                <li>Data Visualization</li>
-                                <li>Dashboards</li>
-                                <li>Presentation</li>
-                            </ul>
+                    <!-- project 1 -->
+                    <div class="project__item project__item--1 hidden">
+                        <div class="project__card">
+                            <img src="public/img/chassis.webp" alt="" class="project__img project__img--1">
+                            <div class="project__face">
+                                <h3 class="project__title">Chassis Design</h3>
+                                <p class="project__links">
+                                    <a href="https://essey1.github.io/chassis/Vehicle-Impact-Analysis.pdf" target="_blank">
+                                        Report<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Autodesk Inventor, Altair Inspire FEA
+                                </p>
+                                <p class="project__description">
+                                    During the Fall 2025 semester, I led a team of 3 in redesigning a solar car chassis to reduce weight, and improve factor of safety and manufacturability.
+                                    <br><br>
+                                    I evaluated 18 load cases using FEA to identify safe material removal, then refined the geometry by communicating with the manufacturing team to ensure reliable manufacturing.
+                                    <br><br>
+                                    The final design achieved a 32% reduction in mass while fulfilling all safety requirements and improving manufacturability.
+                                </p>
+                            </div>
                         </div>
                     </div> <!-- / project -->
 
-                    <!-- project 02 -->
-                    <div class="project">
-                        <div class="project__display project__display--right hidden">
-                            <img src="public/img/movie-posters-vault.jpg" class="project__img">
-                            <p class="project__tools">
-                                Tools: HTML, CSS, React, JSX, OMDb API
-                            </p>
-                            <p class="project__links">
-                                <a href="https://movie-posters-vault.netlify.app" target="_blank">
-                                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                                <a href="https://github.com/essey1/movie-posters-vault" target="_blank">
-                                    View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="project__details project__details--left hidden">
-                            <h3 class="project__title">Movie Posters Vault</h3>
-                            <p class="project__description">
-                                A movie posters search engine that allows users to search for and explore movie posters.<br><br>
-                                This project includes:
-                            </p>
-                            <ul class="project__features">
-                                <li>Collection of movies data using the OMDb API.</li>
-                                <li>Search input that maps over the OMDb API and fetches the movie component that matches your search.</li>
-                                <li>JSX component for a movie poster.</li>
-                                <li>Responsive CSS design.</li>
-                            </ul>
+                    <!-- project 2 -->
+                    <div class="project__item project__item--2 hidden">
+                        <div class="project__card">
+                            <img src="public/img/composite.webp" alt="" class="project__img project__img--2">
+                            <div class="project__face">
+                                <h3 class="project__title">Composite Materials: Building an Aeroshell and a Battery Box</h3>
+                                <p class="project__links">
+                                    <a href="https://essey1.github.io/composite-research/composite-research-report.pdf" target="_blank">
+                                        Report<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Composite Materials, Mold Making, Universal Testing Machine, Excel, ANSYS ACP & FEA, 3D Printing, Stress-Strain Curves
+                                </p>
+                                <p class="project__description">
+                                    This project was completed during my summer 2025 internship at Berea College as part of the Solar Car team. I took ownership of designing and building a composite battery box and developed a scalable manufacturing approach for the solar car aeroshell.
+                                    <br><br>
+                                    I conducted coupon tests to evaluate strength to weight ratios of different composite layups and assess manufacturing quality, designed and fabricated female molds using 3D printed plugs. Design decisions balanced strength, weight, and manufacturability.
+                                    <br><br>
+                                    I achieved a lightweight composite battery box at 50% of the estimated budget and produced small scale aeroshell canopy.
+                                </p>
+                            </div>
                         </div>
                     </div> <!-- / project -->
 
-                    
+                    <!-- project 3 -->
+                    <div class="project__item project__item--3 hidden">
+                        <div class="project__card">
+                            <img src="public/img/electromyography.webp" alt="" class="project__img project__img--3">
+                            <div class="project__face">
+                                <h3 class="project__title">Electromyography: Building an Amplifier Circuit</h3>
+                                <p class="project__links">
+                                    <a href="https://essey1.github.io/electromyography/Electromyography.pdf" target="_blank">
+                                        Report<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: OpAmps(LF353), Oscilloscope, Amplifier Circuit
+                                </p>
+                                <p class="project__description">
+                                    An electronics project focused on measuring surface electromyography signals generated by muscle activity.
+                                    <br><br>
+                                    Utilized LF353 op amps to achieve sufficient gain while keeping noise low. I tested the circuit under different loading conditions to ensure the signal was stable and usable for analysis.
+                                    <br><br>
+                                    I chose electromyography for this lab project because of its impactful applications in prosthetics, medical diagnostics, and sport science.
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 4 -->
+                    <div class="project__item project__item--4 hidden">
+                        <div class="project__card">
+                            <img src="public/img/thumbnail.webp" alt="" class="project__img project__img--4">
+                            <div class="project__face">
+                                <h3 class="project__title">Rolling Uphill? The Double Cone Illusion</h3>
+                                <p class="project__links">
+                                    <a href="https://www.youtube.com/watch?v=VU-s-KPoEwA" target="_blank">
+                                        Video<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: PASCO Capstone, 3D Printing, Trigonometry, Mechanics
+                                </p>
+                                <p class="project__description">
+                                    A video showcasing why a double cone appears to roll uphill. I show how the center
+                                    of mass actually moves downward visually and mathematically, revealing the geometry behind the
+                                    classic “uphill cone” paradox.
+                                    <br><br>
+                                    This Project includes:
+                                </p>
+                                <ul class="project__features">
+                                    <li>Video Motion Analysis using PASCO Capstone</li>
+                                    <li>Mathematical proof of the change in position of the center of mass with respect to time</li>
+                                    <li>Lagrangian of the System</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 5 -->
+                    <div class="project__item project__item--5 hidden">
+                        <div class="project__card">
+                            <img src="public/img/jack-stand.webp" alt="" class="project__img project__img--5">
+                            <div class="project__face">
+                                <h3 class="project__title">Jack Stand</h3>
+                                <p class="project__links">
+                                    <a href="https://etad-130.my.canva.site/essey-presentation" target="_blank">
+                                        Presentation<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Autodesk Inventor, Bambu Labs
+                                </p>
+                                <p class="project__description">
+                                    Designed, prototyped and 3D-printed a jack stand for my final design and documentation project.<br><br>
+                                    This Project includes:
+                                </p>
+                                <ul class="project__features">
+                                    <li>Advanced CAD and 3D printing features</li>
+                                    <li>Dimension comparisons between design and printed part</li>
+                                    <li>Detachable handle system for convenient part replacement</li>
+                                    <li>Cost and waste analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 6 -->
+                    <div class="project__item project__item--6 hidden">
+                        <div class="project__card">
+                            <img src="public/img/biscute.webp" alt="" class="project__img project__img--6">
+                            <div class="project__face">
+                                <h3 class="project__title">Biscuté</h3>
+                                <p class="project__links">
+                                    <a href="https://essey1.github.io/biscute" target="_blank">
+                                        Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                    <a href="https://github.com/essey1/biscute" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: HTML, SCSS, JavaScript, PostCSS
+                                </p>
+                                <p class="project__description">
+                                    A webiste that I co-built for a cookie company located in Addis Ababa, Ethiopia.<br><br>
+                                    My main contributions include:
+                                </p>
+                                <ul class="project__features">
+                                    <li>Responsive design with a joyful and delicious feel.</li>
+                                    <li>Alternative color theme switcher.</li>
+                                    <li>On-scroll animations.</li>
+                                    <li>Flip card effect for the product items.</li>
+                                    <li>On-hover enlarged product gallery.</li>
+                                    <li>About us page.</li>
+                                    <li>Submittable contact form, and more.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 7 -->
+                    <div class="project__item project__item--7 hidden">
+                        <div class="project__card">
+                            <img src="public/img/height_velocity_plot.png" alt="" class="project__img project__img--7">
+                            <div class="project__face">
+                                <h3 class="project__title">Drone Vertical Dynamics Simulation</h3>
+                                <p class="project__links">
+                                    <a href="https://github.com/essey1/drone-vertical-dynamics-simulation" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: C++, Python, GitHub Actions (CI/CD), Pandas, Matplotlib
+                                </p>
+                                <p class="project__description">
+                                    Developed a physics-based simulation to model and validate the vertical flight dynamics of a drone.
+                                    <br><br>
+                                    Implemented a C++ simulation using Runge–Kutta integration to model motion under thrust, gravity, and drag. Defined simulation API through Drone.h, Integrator.h, and a shared State data structure.
+                                    <br><br>
+                                    Designed an automated CI/CD pipeline that builds and runs the simulation, verifies numerical results against analytical expectations, generates flight plots, and deploys validated results via GitHub Pages.
+                                    <br><br>
+                                    The framework is structured for future expansion to 2D and 3D dynamics, and GUI.
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 8 -->
+                    <div class="project__item project__item--8 hidden">
+                        <div class="project__card">
+                            <img src="public/img/tech-trends.jpg" alt="" class="project__img project__img--8">
+                            <div class="project__face">
+                                <h3 class="project__title">Technology Trends</h3>
+                                <p class="project__links">
+                                    <a href="https://essey1.github.io/tech-trends/Essey_Araya_Presentation.pdf" target="_blank">
+                                        Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                    <a href="https://github.com/essey1/tech-trends" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: Python, Pandas, SQL, Numpy, Matpoltlib
+                                </p>
+                                <p class="project__description">
+                                    As a Data Analyst, I collected data from various sources and identified trends for report on emerging skills.<br><br>
+                                    This project includes:
+                                </p>
+                                <ul class="project__features">
+                                    <li>Data Collection using API and Web Scraping.</li>
+                                    <li>Data Wrangling</li>
+                                    <li>Exploratory Analysis</li>
+                                    <li>Data Visualization</li>
+                                    <li>Dashboards</li>
+                                    <li>Presentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
+                    <!-- project 9 -->
+                    <div class="project__item project__item--9 hidden">
+                        <div class="project__card">
+                            <img src="public/img/movie-posters-vault.jpg" alt="" class="project__img project__img--9">
+                            <div class="project__face">
+                                <h3 class="project__title">Movie Posters Vault</h3>
+                                <p class="project__links">
+                                    <a href="https://movie-posters-vault.netlify.app" target="_blank">
+                                        Live Demo<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                    <a href="https://github.com/essey1/movie-posters-vault" target="_blank">
+                                        View Code<i class="fa-solid fa-arrow-up-right-from-square arrow" style="color: #eee;"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="project__details">
+                                <p class="project__tools">
+                                    Tools: HTML, CSS, React, JSX, OMDb API
+                                </p>
+                                <p class="project__description">
+                                    A movie posters search engine that allows users to search for and explore movie posters.<br><br>
+                                    This project includes:
+                                </p>
+                                <ul class="project__features">
+                                    <li>Collection of movies data using the OMDb API.</li>
+                                    <li>Search input that maps over the OMDb API and fetches the movie component that matches your search.</li>
+                                    <li>JSX component for a movie poster.</li>
+                                    <li>Responsive CSS design.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- / project -->
+
                 </div> <!-- / projects -->
             </section>
 
@@ -482,7 +569,7 @@
                     </p>
                 </div>
 
-                <img src="public/img/intro.jpg" class="about-me__img hidden" alt="">
+                <img src="public/img/about.webp" class="about-me__img hidden" alt="">
             </section>
 
             <!-- My Achievements -->
